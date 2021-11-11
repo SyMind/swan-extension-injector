@@ -4,14 +4,18 @@
 
 ![Demo](https://github.com/SyMind/swan-extension-injector/raw/main/assets/demo.png)
 
-## 使用
+## 安装
 
 ```bash
 # 全局安装
 npm i -g swan-extension-injector
 # or for yarn user
 #  yarn global add taro2-to-3
+```
 
+## 使用
+
+```bash
 # 注入新的扩展程序
 swan-ext inject path/to/unpacked/extension
 
@@ -21,3 +25,7 @@ swan-ext list
 # 删除已注入的扩展程序
 swan-ext remove name/of/injected/extension
 ```
+
+## License
+
+[MIT](https://github.com/SyMind/swan-extension-injector/blob/main/LICENSE)
