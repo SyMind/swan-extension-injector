@@ -13,6 +13,7 @@ async function run(task) {
         const defiferJs = archive.getDefiferJs()
         const injector = new Injector(defiferJs)
         await task(injector)
+        await archive.overwrite()
     } catch (error) {
         console.log(chalk.red(error.message))
     } finally {

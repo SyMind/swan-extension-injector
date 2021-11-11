@@ -49,7 +49,7 @@ describe('Injector', () => {
             const injector = new Injector(defiferJs)
 
             await injector.inject(exampleExtension)
-            await injector.remove('Getting Started Example')
+            await injector.remove('hello world')
 
             const defiferJsText = fs.readFileSync(defiferJs, {
                 encoding: 'utf8'
@@ -67,7 +67,7 @@ describe('Injector', () => {
 
             await injector.inject(exampleExtension)
             const names = await injector.list()
-            expect(names).toEqual(['Getting Started Example'])
+            expect(names).toEqual(['hello world'])
         })
     })
 })

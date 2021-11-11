@@ -2,6 +2,8 @@
 
 注入 Chrome 浏览器扩展程序到百度开发者工具
 
+![Demo](https://github.com/SyMind/swan-extension-injector/raw/main/assets/demo.png)
+
 ## 使用
 
 ```bash
