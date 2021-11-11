@@ -1,2 +1,3 @@
 # swan-extension-injector
- 百度智能小程序插件注入器
+
+注入 Chrome 浏览器扩展程序到百度开发者工具

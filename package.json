@@ -1,0 +1,29 @@
+{
+    "name": "swan-extension-injector",
+    "version": "0.0.1",
+    "main": "index.js",
+    "repository": "git@github.com:SyMind/swan-extension-injector.git",
+    "author": "SyMind <dacongsama@live.com>",
+    "bin": {
+        "swan-ext": "./bin/cli.js"
+    },
+    "files": [
+        "bin",
+        "lib"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "test": "jest"
+    },
+    "dependencies": {
+        "asar": "^3.1.0",
+        "chalk": "^4.1.2",
+        "ncp": "^2.0.0",
+        "recast": "^0.20.5",
+        "rimraf": "^3.0.2",
+        "yargs": "^17.2.1"
+    },
+    "devDependencies": {
+        "jest": "^27.3.1"
+    }
+}
