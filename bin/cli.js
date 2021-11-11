@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const yargs = require('yargs')
 const { hideBin } = require('yargs/helpers')
 const chalk = require('chalk')
@@ -5,14 +7,18 @@ const { Archive, Injector } = require('../lib')
 const package = require('../package.json')
 
 async function run(task) {
+    let archive
     try {
-        const archive = new Archive(platform)
+        archive = new Archive()
         const defiferJs = archive.getDefiferJs()
-
         const injector = new Injector(defiferJs)
         await task(injector)
+    } catch (error) {
+        console.log(chalk.red(error.message))
     } finally {
-        archive.dispose()
+        if (archive) {
+            archive.dispose()
+        }
     }
 }
 
